@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css" />
+		<title>Timetable Portal</title>
+	</head>
+	<body>
+    <h1><a href="https://dunmanhigh.moe.edu.sg/wp-content/uploads/2016/08/School-Song-with-Choir-2015.mp3"><img src="/static/DHS.png" alt="Dunman High School"></a>Dunman High School Timetable Portal</h1>
+		<p>Welcome to Dunman High School's one-stop portal for your class timetable!</p>
+		<form action="/" method=POST>
+			<label for="year">I am a Year
+      <input type="number" name="year" min="1" max="6" required> student!</label>
+      <br>
+      <br>
+			<label for="class">Please enter class(Enter XX of 5CXX): </label>
+      <br>
+			<input type = "text" name="class" placeholder="Enter class" required>
+      <p id="error">{{error}}</p>
+			<br>
+			Odd/Even week:
+			<br>
+			<label for="even">
+				<input type="radio" name="week" id="even" value="e" required>Even
+			</label>
+			<label for="odd">
+				<input type="radio" name="week" id="odd" value="o" required>Odd
+			</label>
+			<br>
+			<br>
+			<label for="day">Day(1-5): 
+      <br>
+			<input type="number" name="day" min="1" max="5" required>
+			</label>
+      <br>
+      <br>
+      <input type="submit" value="Get Timetable!">	
+		</form>
+
+	</body>
+</html>
