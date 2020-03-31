@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css" />
+		<title>Timetable Portal</title>
+	</head>
+	<body>
+    <h1><a href="/"><img src="/static/DHS.png" alt="Dunman High School"></a>Dunman High School Timetable Portal</h1>
+    <pre>{{table}}</pre>
+		{%for data in data%}
+    <pre>{{data}}</pre>
+		{%endfor%}
+    <hr>
+    <div class="button" id="button-2">
+      <div id="slide"></div>
+      <a href="/">Back</a>
+    </div>
+	</body>
+</html>
